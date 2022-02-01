@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+:root {
+    --clr-text: #004481;
+    --clr-primary: #067E0A;
+    --clr-accent: #764981;
+
+    --ff-crimson: "Crimson Pro", serif;
+    --ff-logo: "Kaushan Script", sans-serif;
+    --ff-title: "Pathway Gothic One", sans-serif;
+}
 
 *,
 *::before,
@@ -7,5 +19,39 @@
 }
 html {
     box-sizing: border-box;
-    font-family: "Crimson Pro", serif;
+    font-family: var(--ff-crimson);
+    color: var(--clr-text);
+    font-size: 1.125rem;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+h2, 
+h3 {
+    font-family: var(--ff-title);
+    line-height: 0.8;
+}
+h2 {
+    font-size: 2rem;
+}
+p {
+    margin-bottom: .85em;
+}
+
+/* Buttons */
+
+/* Homepage Styles */
+
