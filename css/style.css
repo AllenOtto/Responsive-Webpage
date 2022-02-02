@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 :root {
-    --clr-text: #004481;
+    --clr-text:#002647;
     --clr-primary: #067E0A;
     --clr-accent: #764981;
 
     --ff-crimson: "Crimson Pro", serif;
     --ff-logo: "Kaushan Script", sans-serif;
-    --ff-title: "Pathway Gothic One", sans-serif;
+    --ff-title: "Fredoka One", sans-serif;
 }
 
 *,
@@ -22,6 +22,10 @@ html {
     font-family: var(--ff-crimson);
     color: var(--clr-text);
     font-size: 1.125rem;
+}
+
+body {
+    margin: 0;
 }
 
 img {
@@ -43,6 +47,7 @@ h2,
 h3 {
     font-family: var(--ff-title);
     line-height: 0.8;
+    line-height: 2.5rem;
 }
 h2 {
     font-size: 2rem;
@@ -50,8 +55,52 @@ h2 {
 p {
     margin-bottom: .85em;
 }
+.logo {
+    font-family: var(--ff-logo);
+    text-align: center;
+}
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Navigation */
+header {
+    padding: 1rem 0 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem;
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+nav a:focus,
+nav a:hover {
+    color: var(--clr-accent);
+    text-decoration: underline;
+}
 
 /* Buttons */
 
 /* Homepage Styles */
 
+.hero {
+    background-color: #333;
+    background-image: url(../images/bg-techbomba.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20vh 1rem;
+}
