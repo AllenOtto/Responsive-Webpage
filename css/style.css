@@ -26,6 +26,7 @@ html {
 
 body {
     margin: 0;
+    text-align: center;
 }
 
 img {
@@ -62,12 +63,17 @@ p {
 .section-title-small {
     font-size: 2rem;
 }
+.section-title-small small {
+    font-size: .7em;
+    display: block;
+}
 .text-primary {
     color: var(--clr-primary);
 }
 .logo {
     font-family: var(--ff-logo);
     text-align: center;
+    padding-bottom: .5rem;
 }
 .logo a {
     color: black;
@@ -75,6 +81,7 @@ p {
 }
 
 /* Navigation */
+
 header {
     padding: 1em 0 2em;
 }
@@ -102,6 +109,8 @@ nav a:hover {
 
 /* Buttons */
 
+
+
 /* Homepage Styles */
 
 .hero {
@@ -115,10 +124,6 @@ nav a:hover {
     padding: 20vh 1em;
 }
 
-.intro {
-    text-align: center;
-}
-
 .about-us {
     background: var(--clr-accent);
     display: flex;
@@ -128,8 +133,11 @@ nav a:hover {
 }
 
 .about-us__intro {
-    background-image: url(../images/bg-2.jpg);
-    background-blend-mode: multiply;
+    background-image: url(../images/bg-softdev.jpg);
     background-size: cover;
-    padding: 3rem 1rem;
+    padding: 3em 1em 1.5em;
+}
+
+.about-us__body {
+    padding: 1.5em 1em 3em;
 }
