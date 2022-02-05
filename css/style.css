@@ -5,7 +5,9 @@
 :root {
     --clr-text:#002647;
     --clr-primary: #067E0A;
+    --clr-primary-dark: #065f09;
     --clr-accent: #613b6b;
+    --clr-accent-dark: #4a2e52;
 
     --ff-crimson: "Crimson Pro", serif;
     --ff-logo: "Kaushan Script", sans-serif;
@@ -80,6 +82,10 @@ p {
     text-decoration: none;
 }
 
+.mb-0 {
+    margin-bottom: 0;
+}
+
 /* Navigation */
 
 header {
@@ -126,11 +132,22 @@ nav a:hover {
 
 .btn-accent {
     background: var(--clr-accent);
-    color: white;
+    transition: background-color .3s ease;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+    background: var(--clr-accent-dark);
 }
 
 .btn-primary {
     background: var(--clr-primary);
+    transition: background-color .3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--clr-primary-dark);
 }
 
 /* Homepage Styles */
