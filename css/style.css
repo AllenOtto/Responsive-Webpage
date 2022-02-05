@@ -207,7 +207,89 @@ nav a:hover {
     margin-bottom: .5em;
 }
 
+.service:last-of-type {
+    margin-bottom: 0;
+}
 .fineprint {
     font-size: .75rem;
     color: rgba(0, 0, 0, .85);
+}
+
+/* Kevin's Style for Footer */
+
+/* footer {
+    background: var(--clr-accent-dark);
+    padding: 3em 1em;
+    color: white;
+    display: flex;
+}
+
+footer a {
+    color: inherit;
+}
+
+.footer-nav {
+    list-style: none;
+}
+
+.footer-nav a {
+    padding: .75em;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.social-icon {
+    width: 40px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-bottom: 5px;
+} */
+
+/* My Styling for Footer */
+
+footer {
+    background-color: var(--clr-accent-dark);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0;
+}
+
+footer li {
+    text-align: center;
+}
+
+.footer-nav, 
+.footer-social {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social {
+    margin: 1em 0 0;
+}
+
+.social-icon {
+    width: 35px;
 }
