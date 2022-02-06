@@ -188,6 +188,8 @@ nav a:hover {
 .services {
     display: flex;
     flex-direction: column;
+    max-width: 30rem;
+    margin: 0 auto;
 }
 
 .service {
@@ -257,16 +259,19 @@ footer a {
 /* My Styling for Footer */
 
 footer {
-    background-color: var(--clr-accent-dark);
+    /* background-color: var(--clr-accent-dark); */
+    background-color: #b8b5b5;
     padding: 1em;
     display: flex;
     flex-direction: column;
     margin-top: 3em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 footer ul {
@@ -292,4 +297,10 @@ footer li {
 
 .social-icon {
     width: 35px;
+}
+
+@media only screen and (min-width: 750px) {
+    section {
+        padding: 6em 1em;
+    }
 }
