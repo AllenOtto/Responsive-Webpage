@@ -92,6 +92,11 @@ header {
     padding: 1em 0 2em;
 }
 
+.who-we-are__header {
+    color: red;
+    padding: 1em 0;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -164,6 +169,17 @@ nav a:hover {
     padding: 20vh 1em;
 }
 
+.hero__who-we-are {
+    background-color: #555;
+    background-image: url(../images/at-the-office.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20vh 1em;
+}
+
 .about-us {
     background: var(--clr-accent);
     display: flex;
@@ -174,7 +190,7 @@ nav a:hover {
 
 .about-us__intro {
     background-color: var(--clr-accent);
-    background-image: url(../images/bg-softdev.jpg);
+    background-image: url(../images/bg-networking.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: multiply;
